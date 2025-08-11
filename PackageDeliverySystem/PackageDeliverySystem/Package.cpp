@@ -2,6 +2,7 @@
 
 //Constructor
 Package::Package(std::vector<std::unique_ptr<Item>>& items) { getPackageContent(items); }
+
 //Deconstructor
 Package::~Package() {}
 
@@ -15,6 +16,7 @@ void Package::getPackageContent(std::vector<std::unique_ptr<Item>>& items)
     for (auto& i : items) {
         std::cout << "Item #" << getItemID() << " | ";
         i->content();
+        std::cout << std::endl;
     }
     std::cout << "-----------------------------------------------------" << std::endl;
 }

@@ -6,7 +6,12 @@
 //Derived Class of Item
 class Book : public Item
 {
+private:
+	std::string bookTitle = "";
+	double bookPrice = 0.0;
 public:
-	virtual void content() override { std::cout << "Book\n"; }
+	Book(std::string title, double price) : bookTitle{ title }, bookPrice {price}{}
+
+	virtual void content() override { std::cout << "Book: " << bookTitle << "\n	  Price: " << bookPrice << std::endl; }
 };
 #endif 
