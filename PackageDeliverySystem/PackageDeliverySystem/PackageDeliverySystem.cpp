@@ -1,20 +1,22 @@
 // PackageDeliverySystem.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
-#include <iostream>
+#include "Package.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    //Vector to store item pointers
+    std::vector<std::unique_ptr<Item>> itemsSet1;
+
+    //insert new derived class instances into vector
+    itemsSet1.emplace_back(std::make_unique<Book>());
+    itemsSet1.emplace_back(std::make_unique<Book>());
+    itemsSet1.emplace_back(std::make_unique<Book>());
+    itemsSet1.emplace_back(std::make_unique<Book>());
+    itemsSet1.emplace_back(std::make_unique<Book>());
+
+    //create Pakage Label pointer for Package pointer instance
+    std::unique_ptr<PackageLabel> unitLabel1 = std::make_unique<PackageLabel>("John", "Doe", 27604, "15 East Peace Street", "Raleigh", "NC");
+    std::unique_ptr<Package> unitPackage1{ std::make_unique<Package>(itemsSet1) };
+
+
+    return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
