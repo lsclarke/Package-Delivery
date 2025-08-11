@@ -6,7 +6,7 @@ This program was created to package and store data of any class type ready for d
 
 I also worked many years as a Target Fulfilment Team member. A lot of my duties consisted of packaging and retrieving items from inventory! Packages can store all kinds of things so it would make sense that the data a package can hold shouldn't be relegated to a single type but should be able to hold different data types as well for shipping. This will also help me to improve my problem solving skills to incorporate real world equations and problems into the C++ programming language.
 
-<img width="1756" height="417" alt="Package and Delivery graphic" src="https://github.com/user-attachments/assets/9e7d71a4-bae1-4377-bd0d-49f0b35065b8" />
+<img width="1756" height="417" alt="Package and Delivery graphic" src="https://github.com/user-attachments/assets/1e91a23c-f79e-4c81-81a7-38bb127532fc" />
 
 -----------------------------------------------------------------------------------------------------------------
 
